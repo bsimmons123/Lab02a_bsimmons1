@@ -50,8 +50,11 @@
     <url-pattern>/guessingGame</url-pattern>
   </servlet-mapping>
   
-  <!--  AJAX servlet mappings. -->
-  <servlet-mapping>
+  <!--  AJAX servlet mappings. --><servlet-mapping>
+  	<servlet-name>MultiplyNumbersAjaxServlet</servlet-name>
+  	<url-pattern>/ajax/multiplyNumbers</url-pattern>
+</servlet-mapping>
+	<servlet-mapping>
     <servlet-name>AddNumbersAjaxServlet</servlet-name>
     <url-pattern>/ajax/addNumbers</url-pattern>
   </servlet-mapping>
