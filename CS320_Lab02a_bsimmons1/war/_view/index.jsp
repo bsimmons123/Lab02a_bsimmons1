@@ -11,7 +11,6 @@
 	</style>
 
 	<body>
-		<form action="${pageContext.servletContext.contextPath}/index" method="post">
 			<!--Button for addNumbers-->
 			<div class="button">
 				<input type="button" onclick="window.location.href='addNumbers';" value="Add Numbers" />
@@ -26,6 +25,5 @@
 			<div class="button">
 				<input type="button" onclick="window.location.href='guessingGame';" value="Guessing Game" />
 			</div>
-			
 	</body>
 </html>
