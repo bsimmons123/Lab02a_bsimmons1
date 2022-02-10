@@ -58,7 +58,7 @@ public class AddNumbersServlet extends HttpServlet {
 
 			// check for errors in the form data before using is in a calculation
 			if (first == null || second == null || third == null) {
-				errorMessage = "Please specify two numbers";
+				errorMessage = "Please specify three numbers";
 			}
 			// otherwise, data is good, do the calculation
 			// must create the controller each time, since it doesn't persist between POSTs
