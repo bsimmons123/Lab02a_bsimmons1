@@ -10,15 +10,15 @@ public class Numbers {
 		
 	}
 	
-	public void setFirstNumber(Double first) {
+	public void setFirst(Double first) {
 		this.first = first;
 	}
 	
-	public void setSecondNumber(Double second) {
+	public void setSecond(Double second) {
 		this.second = second;
 	}
 	
-	public void setThridNumber(Double third) {
+	public void setThrid(Double third) {
 		this.third = third;
 	}
 	
@@ -27,15 +27,15 @@ public class Numbers {
 	}
 	
 	
-	public Double getFirstNumber() {
+	public Double getFirst() {
 		return this.first;
 	}
 	
-	public Double getSecondNumber() {
+	public Double getSecond() {
 		return this.second;
 	}
 	
-	public Double getThirdNumber() {
+	public Double getThird() {
 		return this.third;
 	}
 	

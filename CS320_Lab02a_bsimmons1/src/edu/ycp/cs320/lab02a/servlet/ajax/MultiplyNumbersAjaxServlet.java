@@ -34,8 +34,8 @@ public class MultiplyNumbersAjaxServlet extends HttpServlet {
 		Double second = getDouble(req, "second");
 		
 		// Set parameters in model
-		model.setFirstNumber(first);
-		model.setSecondNumber(second);
+		model.setFirst(first);
+		model.setSecond(second);
 		
 		// Check whether parameters are valid
 		if (first == null || second == null) {

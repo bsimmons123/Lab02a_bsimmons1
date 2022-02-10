@@ -10,11 +10,11 @@ public class NumbersController {
 	}
 	
 	public Double add() {
-		return model.getFirstNumber() + model.getSecondNumber() + model.getThirdNumber();
+		return model.getFirst() + model.getSecond() + model.getThird();
 	}
 	
 	public Double multiply() {
-		return model.getFirstNumber() * model.getSecondNumber();
+		return model.getFirst() * model.getSecond();
 	}
 	
 }

@@ -34,9 +34,9 @@ public class AddNumbersAjaxServlet extends HttpServlet {
 		Double second = getDouble(req, "second");
 		Double third = getDouble(req, "third");
 		
-		model.setFirstNumber(first);
-		model.setSecondNumber(second);
-		model.setThridNumber(third);
+		model.setFirst(first);
+		model.setSecond(second);
+		model.setThrid(third);
 		
 		// Check whether parameters are valid
 		if (first == null || second == null || third == null) {

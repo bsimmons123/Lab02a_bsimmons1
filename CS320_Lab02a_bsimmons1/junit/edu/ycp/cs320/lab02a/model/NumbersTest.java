@@ -22,23 +22,23 @@ public class NumbersTest {
 
 	@Test
 	public void FirstNumbertest() {
-		model.setFirstNumber(first);
+		model.setFirst(first);
 		
-		assertEquals(first, model.getFirstNumber());
+		assertEquals(first, model.getFirst());
 	}
 	
 	@Test
 	public void SecondNumberTest() {
-		model.setSecondNumber(second);
+		model.setSecond(second);
 		
-		assertEquals(second, model.getSecondNumber());
+		assertEquals(second, model.getSecond());
 	}
 	
 	@Test
 	public void ThirdNumberTest() {
-		model.setThridNumber(third);
+		model.setThrid(third);
 		
-		assertEquals(third, model.getThirdNumber());
+		assertEquals(third, model.getThird());
 	}
 
 }

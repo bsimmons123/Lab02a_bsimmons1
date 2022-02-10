@@ -52,9 +52,9 @@ public class AddNumbersServlet extends HttpServlet {
 			
 			System.out.println("\tSending parameters to model");
 			// Sets first second and third numbers in model 
-			model.setFirstNumber(first);
-			model.setSecondNumber(second);
-			model.setThridNumber(third);
+			model.setFirst(first);
+			model.setSecond(second);
+			model.setThrid(third);
 
 			// check for errors in the form data before using is in a calculation
 			if (first == null || second == null || third == null) {
@@ -89,6 +89,8 @@ public class AddNumbersServlet extends HttpServlet {
 		req.setAttribute("errorMessage", errorMessage);
 		System.out.println("\tPosting AddNumbers results");
 		req.setAttribute("result", model.getResult());
+		
+		req.setAttribute("add", model);
 		
 		// Forward to view to render the result HTML document
 		req.getRequestDispatcher("/_view/addNumbers.jsp").forward(req, resp);

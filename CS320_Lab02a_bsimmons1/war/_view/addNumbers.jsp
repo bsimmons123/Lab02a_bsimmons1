@@ -25,19 +25,19 @@
 			<table>
 				<tr>
 					<td class="label">First number:</td>
-					<td><input type="text" name="first" size="12" value="${first}" /></td>
+					<td><input type="text" name="first" size="12" value="${add.first}" /></td>
 				</tr>
 				<tr>
 					<td class="label">Second number:</td>
-					<td><input type="text" name="second" size="12" value="${second}" /></td>
+					<td><input type="text" name="second" size="12" value="${add.second}" /></td>
 				</tr>
 				<tr>
 					<td class="label">Third number:</td>
-					<td><input type="text" name="third" size="12" value="${third}" /></td>
+					<td><input type="text" name="third" size="12" value="${add.third}" /></td>
 				</tr>
 				<tr>
 					<td class="label">Result:</td>
-					<td>${result}</td>
+					<td>${add.result}</td>
 				</tr>
 			</table>
 			<input type="Submit" name="submit" value="Add Numbers!">

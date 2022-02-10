@@ -30,13 +30,13 @@ public class NumbersControllerTest {
 
 	@Test
 	public void AddNumberstest() {
-		model.setFirstNumber(first);
-		model.setSecondNumber(second);
-		model.setThridNumber(third);
+		model.setFirst(first);
+		model.setSecond(second);
+		model.setThrid(third);
 		
-		assertEquals(first, model.getFirstNumber());
-		assertEquals(second, model.getSecondNumber());
-		assertEquals(third, model.getThirdNumber());
+		assertEquals(first, model.getFirst());
+		assertEquals(second, model.getSecond());
+		assertEquals(third, model.getThird());
 		
 		result = controller.add();
 		
@@ -47,11 +47,11 @@ public class NumbersControllerTest {
 	
 	@Test
 	public void MultiplyNumberstest() {
-		model.setFirstNumber(first);
-		model.setSecondNumber(second);
+		model.setFirst(first);
+		model.setSecond(second);
 		
-		assertEquals(first, model.getFirstNumber());
-		assertEquals(second, model.getSecondNumber());
+		assertEquals(first, model.getFirst());
+		assertEquals(second, model.getSecond());
 		
 		result = controller.multiply();
 		System.out.println("Multiply Result: " + result);

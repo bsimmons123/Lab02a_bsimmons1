@@ -52,8 +52,8 @@ public class MultiplyNumbersServlet extends HttpServlet {
 			
 			// setting first and second variables to model
 			System.out.println("\tSending parameters to model");
-			model.setFirstNumber(first);
-			model.setSecondNumber(second);
+			model.setFirst(first);
+			model.setSecond(second);
 
 			// check for errors in the form data before using is in a calculation
 			if (first == null || second == null) {
@@ -87,6 +87,8 @@ public class MultiplyNumbersServlet extends HttpServlet {
 		req.setAttribute("errorMessage", errorMessage);
 		System.out.println("\tPosting MultiplyNumbers results");
 		req.setAttribute("result", model.getResult());
+		
+		req.setAttribute("multiply", model);
 		
 		// Forward to view to render the result HTML document
 		req.getRequestDispatcher("/_view/multiplyNumbers.jsp").forward(req, resp);
