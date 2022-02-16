@@ -72,17 +72,16 @@ public class AddNumbersServlet extends HttpServlet {
 				model.setResult(result);
 			}
 		} catch (NumberFormatException e) {
-			errorMessage = "Invalid double";
+			String firstS = req.getParameter("first");
+			String secondS = req.getParameter("second");
+			String thirdS = req.getParameter("third");
+			
+			model.setFirstString(firstS);
+			model.setSecondString(secondS);
+			model.setThridString(thirdS);
+			errorMessage = "Invalid double"; // its not a bug, its an undocumented feature
 		}
 		
-		// Add parameters as request attributes
-		// this creates attributes named "first" and "second for the response, and grabs the
-		// values that were originally assigned to the request attributes, also named "first" and "second"
-		// they don't have to be named the same, but in this case, since we are passing them back
-		// and forth, it's a good idea
-		req.setAttribute("first", req.getParameter("first"));
-		req.setAttribute("second", req.getParameter("second"));
-		req.setAttribute("third", req.getParameter("third"));
 		
 		// add result objects as attributes
 		// this adds the errorMessage text and the result to the response
