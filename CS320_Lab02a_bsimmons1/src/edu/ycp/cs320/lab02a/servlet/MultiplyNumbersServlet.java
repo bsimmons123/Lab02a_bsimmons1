@@ -74,6 +74,9 @@ public class MultiplyNumbersServlet extends HttpServlet {
 			errorMessage = "Invalid double";
 		}
 		
+		req.setAttribute("first", req.getParameter("first"));
+		req.setAttribute("second", req.getParameter("second"));
+		
 		// add result objects as attributes
 		// this adds the errorMessage text and the result to the response
 		req.setAttribute("errorMessage", errorMessage);
