@@ -71,6 +71,7 @@ public class MultiplyNumbersServlet extends HttpServlet {
 				model.setResult(result);
 			}
 		} catch (NumberFormatException e) {
+			System.out.println("Setting Error");
 			errorMessage = "Invalid double";
 		}
 		

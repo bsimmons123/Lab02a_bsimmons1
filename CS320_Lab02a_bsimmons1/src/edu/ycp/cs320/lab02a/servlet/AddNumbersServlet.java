@@ -72,6 +72,7 @@ public class AddNumbersServlet extends HttpServlet {
 				model.setResult(result);
 			}
 		} catch (NumberFormatException e) {
+			System.out.println("Setting Error");
 			errorMessage = "Invalid double"; // its not a bug, its an undocumented feature
 		}
 		req.setAttribute("first", req.getParameter("first"));
