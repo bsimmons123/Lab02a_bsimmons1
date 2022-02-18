@@ -31,7 +31,7 @@ public class GuessingGameController {
 	 */
 	public void setNumberFound() {
 		model.setMax(model.getGuess()); // its not a bug, its an undocumented feature
-		model.setMin(model.getGuess());
+		model.setMin(model.getMax());
 	}
 
 	/**
